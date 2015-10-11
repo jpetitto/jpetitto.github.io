@@ -5,8 +5,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
+title:               John Petitto
+tagline:             Software Engineer at IBM
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
