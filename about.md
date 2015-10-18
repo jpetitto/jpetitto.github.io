@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+## About me
+
 My name is John and I'm a software engineer living in Austin, TX. I currently work in the Mobile Innovation Lab at IBM.
 
 I mainly talk about Android and other related things on my blog. I'm also interested in reactive programming, Kotlin, functional programming, compilers, API design, and open source software.
