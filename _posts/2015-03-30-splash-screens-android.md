@@ -3,7 +3,7 @@ layout: post
 title: Splash Screens on Android
 ---
 
-*Fork the sample code from this article [here](https://github.com/IBM-MIL/android-splash-screen)*
+*The sample code from this article can be [forked](https://github.com/IBM-MIL/android-splash-screen) on GitHub*
 
 -----
 
