@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Great Enum Debate
+comments: true
 ---
 
 *This article was originally published on [IBM's Mobile Innovation Lab blog](https://ibm.biz/enum-debate)*

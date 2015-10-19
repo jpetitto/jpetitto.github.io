@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Typedef Annotations in Android
+comments: true
 ---
 
 Java's `enum` type is the standard way for defining a set of related constants. For instance, we can define an `enum` to represent different units of temperature:
