@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               John Petitto
-tagline:             Software Engineer at IBM
+tagline:             Software Engineer
 url:                 http://getpoole.com
 paginate:            2
 baseurl:             ""
