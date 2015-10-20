@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-comments: False
 ---
 
 ## About me

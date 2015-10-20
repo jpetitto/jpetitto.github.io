@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               John Petitto
 tagline:             Software Engineer at IBM
 url:                 http://getpoole.com
-paginate:            1
+paginate:            2
 baseurl:             ""
 
 # Assets
