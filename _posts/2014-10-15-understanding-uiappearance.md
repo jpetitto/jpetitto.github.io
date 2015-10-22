@@ -2,6 +2,7 @@
 layout: post
 title: A hard-to-catch bug... and understanding UIAppearance
 comments: true
+permalink: understanding-uiappearance
 ---
 
 *This article was originally published on [IBM's Mobile Innovation Lab blog](http://www-969.ibm.com/innovation/milab/blog/post/a-hard-to-catch-bug-and-understanding-uiappearance)*

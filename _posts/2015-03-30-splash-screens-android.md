@@ -2,6 +2,7 @@
 layout: post
 title: Splash Screens on Android
 comments: true
+permalink: splash-screens-android
 ---
 
 *The sample code from this article can be [forked](https://github.com/IBM-MIL/android-splash-screen) on GitHub*
