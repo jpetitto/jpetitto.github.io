@@ -32,5 +32,4 @@ github:
 # Navigation bar
 pages_list:
   About: '/about'
-  Resume: '/resume'
   Blog: '/blog'
