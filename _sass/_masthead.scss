@@ -6,21 +6,24 @@
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+  background-color: #3F51B5;
 }
 
 .masthead-title {
+  max-width: 38rem;
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  color: #fff;
 
   a {
-    color: #505050;
+    color: #fff;
   }
 
   small {
     font-size: 75%;
     font-weight: 400;
-    color: #c0c0c0;
+    color: #fff;
     letter-spacing: 0;
   }
 }

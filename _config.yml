@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               John Petitto
 tagline:             Software Developer
 url:                 http://www.johnpetitto.com
-paginate:            4
+paginate:            3
 baseurl:             ""
 
 # Assets
