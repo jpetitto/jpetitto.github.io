@@ -17,7 +17,7 @@ I eventually stumbled across the following line of code in the aforementioned vi
 [[UISegmentedControl appearance] setWidth:110.0f forSegmentAtIndex:1];
 {% endhighlight %}
 
-A quick web search returned several results describing the `UIAppearance` protocol and its ability to customize UI components across a single app. Clearly, this line of code was unintended since we did not want the second segment of every `UISegmentedControl` to have a fixed width<!-- excerpt.end -->.
+A quick web search returned several results describing the `UIAppearance` protocol and its ability to customize UI components across a single app. Clearly, this line of code was unintended since we did not want the second segment of every `UISegmentedControl` to have a fixed width.<!-- excerpt.end -->
 
 While the previous case shows the danger and possible misuse of the `UIAppearance` protocol, it does introduce a powerful and useful concept that allows developers to easily control the look-and-feel of UI components across an entire app. The rest of this article delves into the details of using the protocol.
 

@@ -21,7 +21,7 @@ permalink: splash-screens-android
 
 <!-- excerpt.start -->At some point you may find yourself needing to implement a splash screen for your Android app. Reasons for doing so include matching an existing design for iOS, performing necessary background work at start up, or simply for the visual appeal alone. It should be noted that splash screens are certainly not required in your app. In fact, [some feel that they should be avoided entirely](http://cyrilmottier.com/2012/05/03/splash-screens-are-evil-dont-use-them/). Still, it is not uncommon to come across Android apps that utilize a splash screen.
 
-This article provides a detailed outline for implementing a splash screen on Android. While the implementation is relatively straight forward, there are a few details that often get overlooked. We've also provided a working sample project that can be run on your device or emulator<!-- excerpt.end -->.
+This article provides a detailed outline for implementing a splash screen on Android. While the implementation is relatively straight forward, there are a few details that often get overlooked. We've also provided a working sample project that can be run on your device or emulator.<!-- excerpt.end -->
 
 ### The Basics
 

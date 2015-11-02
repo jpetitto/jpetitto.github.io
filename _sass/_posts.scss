@@ -27,6 +27,23 @@
   color: #9a9a9a;
 }
 
+.read-more {
+  text-align: center;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+a.read-more {
+  border: solid #eee;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+a.read-more:hover {
+  background-color: #3f51b5;
+  color: #fff;
+  text-decoration: none;
+}
 
 // Related posts
 .related {

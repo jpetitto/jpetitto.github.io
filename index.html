@@ -16,13 +16,18 @@ title: Home
 
     {% if post.content contains '<!-- excerpt.start -->' and post.content contains '<!-- excerpt.end -->' %}
 
-      {{ ((post.content | split:'<!-- excerpt.start -->' | last) | split: '<!-- excerpt.end -->' | first) | strip.html }}... <a href="{{ post.url }}"> read more</a>
+      {{ ((post.content | split:'<!-- excerpt.start -->' | last) | split: '<!-- excerpt.end -->' | first) | strip.html }}
 
     {% else %}
 
       {{ post.content }}
 
     {% endif %}
+
+    <div class="read-more">
+      <a class="read-more" href="{{ post.url }}">Read More</a>
+    </div>
+
   </article>
   {% endfor %}
 </div>

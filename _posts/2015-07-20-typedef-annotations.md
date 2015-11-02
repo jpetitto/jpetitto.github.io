@@ -22,7 +22,7 @@ setConversionUnit(TemperatureUnit.CELSIUS);
 setConversionUnit("Celsius"); // not allowed; 'String' is not of type 'TemperatureUnit'
 {% endhighlight %}
 
-`Enums` possess even more power since they can contain both methods and constructors as part of their definition. This allows them to behave similar to `class` types<!-- excerpt.end -->.
+`Enums` possess even more power since they can contain both methods and constructors as part of their definition. This allows them to behave similar to `class` types.<!-- excerpt.end -->
 
 Before the `enum` type was introduced in Java 5, programmers would typically define a set of `int` constants instead. Using our previous example of temperature units, we might define the constants as follows:
 
