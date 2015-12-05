@@ -15,5 +15,5 @@ You can reach me by [email](mailto:john.petitto@gmail.com) or find me on any of 
 * [Twitter](https://twitter.com/johnpetitto)
 * [reddit](https://www.reddit.com/user/jpetitto/)
 * [Stack Overflow](http://stackoverflow.com/users/3761521/jpetitto)
-* [LinkedIn](https://www.linkedin.com/pub/john-petitto/94/293/b51)
-* [Instagram](https://instagram.com/jpetitto90/)
+* [Hacker News](https://news.ycombinator.com/user?id=jpetitto)
+* [LinkedIn](https://www.linkedin.com/in/johnpetitto)
