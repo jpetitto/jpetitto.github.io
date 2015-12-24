@@ -25,7 +25,7 @@ I recently came across this in the [PlacesAutocompleteTextView library](https://
 
 To achieve this, a "resolver" class is used to determine which dependency to use at runtime. For example, this is the class for determining which HTTP client to use:
 
-``` java
+{% highlight java %}
 public final class PlacesHttpClientResolver {
   public static final PlacesHttpClient PLACES_HTTP_CLIENT;
 
@@ -48,7 +48,7 @@ public final class PlacesHttpClientResolver {
     throw new RuntimeException("No Instances!");
   }
 }
-```
+{% endhighlight %}
 
 When the class gets loaded, the fully qualified class name for `OkHttpClient` is checked for availability. If a `ClassNotFoundException` is thrown, then we know OkHttp wasn't added by the user and we fall back to `HttpURLConnection`. `PlacesHttpClient` acts as common interface that wraps both implementations so either can be used interchangeably through out the codebase. This same approach is used for JSON parsing, where [Gson](https://github.com/google/gson) can optionally be included as a dependency.
 
@@ -58,11 +58,11 @@ I mentioned earlier that you should be wise about which features to include in y
 
 Likewise, different response converters have been split into their own dependencies as well. For example, Retrofit users that need to convert a JSON response and already rely on Gson can add the following dependency to their `build.gradle` file:
 
-``` gradle
+{% highlight groovy %}
 dependencies {
   compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
 }
-```
+{% endhighlight %}
 
 Those that use a different JSON library like [Jackson](http://wiki.fasterxml.com/JacksonHome) or need to parse a different data format such as XML or protocol buffers, can do so and not be burdened by the extra dependencies that would be needed to serve all of Retrofit's users. Just as important, the core library isn't muddied up by these additional features and can remain focused on the primary issues it's meant to solve.
 
