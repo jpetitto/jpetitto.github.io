@@ -64,7 +64,7 @@ We can forward these values to our `subscriber` with its `onNext` method. In thi
 
 Since we are working with a stream of values, we can go ahead and emit a second value if we'd like. The number of `onNext` notifications our `Observable` generates could potentially be infinite.
 
-When we are done emitting values, we can signal to the `subscriber` that no more values will be emitted. This is done through its `onCompleted` method. It's important to note that this is a terminal event, meaning no more notifications can sent from the `Observable` to its `subscriber`.
+When we are done emitting values, we can signal to the `subscriber` that no more values will be emitted. This is done through its `onCompleted` method. It's important to note that this is a terminal event, meaning no more notifications can be sent from the `Observable` to its `subscriber`.
 
 A third type of notification is `onError`. This allows us to forward any possible errors to the `subscriber`. Like `onCompleted` though, this is a terminal event and no more notifications can be sent by the `Observable`.
 
@@ -110,11 +110,11 @@ Here's another method that we'll be using in our upcoming examples. It takes a v
 
 [Slide 34](https://speakerdeck.com/jpetitto/rxjava-for-android-developers-austin-droids-meetup?slide=34):
 
-Let's take a look now at the [`flatMap`](http://reactivex.io/documentation/operators/flatmap.html) operator. It takes each item emitted by the source `Observable` and then returns a new `Observable` for each item. In this case, each `Observable` represents a list of device names for a particular version. `flatMap` will then take each `Observable` that gets returned and "flatten" them into a single `Observable`.
+Let's take a look now at the [`flatMap`](http://reactivex.io/documentation/operators/flatmap.html) operator. It takes each item emitted by the source `Observable` and then returns a new `Observable` for each item. In this case, each `Observable` represents a list of device names for a particular version. `flatMap` then take each `Observable` returned and "flattens" them into a single `Observable`.
 
 [Slide 35](https://speakerdeck.com/jpetitto/rxjava-for-android-developers-austin-droids-meetup?slide=35):
 
-Now `flatMap` uses a `merge` under the hood and as I previously mentioned the `merge` operator interleaves its items. So if order matters, we can swap out `flatMap` for [`concatMap`](http://reactivex.io/RxJava/javadoc/rx/Observable.html#concatMap(rx.functions.Func1)) to preserve ordering. This way all the devices for Kit-Kat will get emitted before the devices for Lollipop (and eventually Marshmallow) do.
+`flatMap` uses a `merge` under the hood and as I previously mentioned the `merge` operator interleaves its items. So if order matters, we can swap out `flatMap` for [`concatMap`](http://reactivex.io/RxJava/javadoc/rx/Observable.html#concatMap(rx.functions.Func1)) to preserve ordering. This way all the devices for Kit-Kat will get emitted before the devices for Lollipop (and eventually Marshmallow) do.
 
 [Slide 36](https://speakerdeck.com/jpetitto/rxjava-for-android-developers-austin-droids-meetup?slide=36):
 
@@ -186,7 +186,7 @@ You can clone the project from my GitHub:
 git clone https://github.com/jpetitto/rxjava-android-example.git
 {% endhighlight %}
 
-The app allows you to search for users on GitHub. It makes a call to the GitHub API and then displays the results in a simple `RecyclerView` When you click on a user listed in the search results, it triggers a `Toast` to appear with their username.
+The app allows you to search for users on GitHub. It makes a call to the GitHub API and then displays the results in a simple `RecyclerView`. When you click on a user listed in the search results, it triggers a `Toast` to appear with their username.
 
 [Slide 69-74](https://speakerdeck.com/jpetitto/rxjava-for-android-developers-austin-droids-meetup?slide=69):
 
