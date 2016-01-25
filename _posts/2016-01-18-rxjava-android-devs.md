@@ -20,13 +20,13 @@ As Android developers we do lots of asynchronous programming. The main reason fo
 
 Async programming is not always easy though. As the complexity of our apps grow, the ability to control its async behavior becomes increasingly difficult.
 
-For instance, composing multiple async calls together is not always easy. Nesting of calls, where each subsequent call relies on the previous one, can become difficult to manage. Or if we have multiple calls that can run simultaneously, then we need a way of ensuring each call has completed before proceeding.
+For instance, composing multiple async calls together can often be troublesome. Nesting of calls, where each subsequent call relies on the previous one, can become difficult to manage. Or if we have multiple calls that can run simultaneously, then we need a way of ensuring each call has completed before proceeding.
 
 To make these calls asynchronous we have to introduce multiple threads. And I don't think I need to tell anyone just how difficult it can be to manage concurrency in your app. Depending on the abstractions you're using and the complexity of the problem at hand, it may be difficult to prove that your program runs the way you expect it to under all conditions.
 
-On top of this, we have to think about error handling. Each call could perhaps trigger its own set of errors. And depending on the complexity of each call, there may be a lot of boilerplate to ensure each error is caught and handled appropriately. This can make composition even more difficult.
+On top of this, we have to think about error handling. Each call could perhaps trigger its own set of errors. And depending on the complexity of each call, there may be a lot of boilerplate to ensure each error is caught and handled appropriately. This can also make composition even more difficult.
 
-It's these three issues together that can make asynchronous code difficult to manage.
+It's these three issues together that can make asynchronous code hard to manage.
 
 [Slide 7](https://speakerdeck.com/jpetitto/rxjava-for-android-developers-austin-droids-meetup?slide=7):
 
