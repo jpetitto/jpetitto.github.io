@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Loading Resources from Unit Tests
-comments: false
+comments: true
 permalink: unit-test-resource-loading
 ---
 
