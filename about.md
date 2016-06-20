@@ -5,7 +5,7 @@ title: About
 
 ## About me
 
-I'm a software engineer currently living in Los Angeles, CA. I work for [Wallaby Financial](https://www.walla.by/) doing Android development. Previously I worked at IBM's [Mobile Innovation Lab](http://www.ibm.com/innovation/milab).
+I'm a software engineer currently living in Los Angeles, CA. I build Android apps for [Wallaby Financial](https://www.walla.by/). Previously I worked at IBM's [Mobile Innovation Lab](http://www.ibm.com/innovation/milab).
 
 You'll mostly find me writing about Android on my blog. I'm also interested in functional programming, compilers, API design, and open source software.
 
