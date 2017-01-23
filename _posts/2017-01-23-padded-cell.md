@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Padded Cell - The 'Right' Way to Measure a RecyclerView
+title: A Padded Cell - Dealing with RecyclerView Measurements
 comments: true
 permalink: padded-cell
 ---
@@ -26,7 +26,15 @@ Here's a simple RecyclerView that supports each of these features:
 
 <script src="https://gist.github.com/jpetitto/a638f6f5914b952855b26fa2743e347c.js"></script>
 
-<div style="text-align: center;"><img src="../assets/clip-padding-initial.png"><img src="../assets/clip-padding-scroll.png"></div>
+_Initial Position_
+<div>
+<img src="../assets/clip-padding-initial.png">
+</div>
+
+_After Scrolling_
+<div>
+<img src="../assets/clip-padding-scroll.png" />
+</div>
 
 To deal with the spacing between items, we can use an ItemDecoration. For example, here is a simple reusable ItemDecoration that lets you specify the amount of space between each item:
 
