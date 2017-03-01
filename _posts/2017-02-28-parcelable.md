@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use a Library for Parceling Data
+title: Use a Library when Parceling Data
 comments: true
 permalink: parcelable
 ---
