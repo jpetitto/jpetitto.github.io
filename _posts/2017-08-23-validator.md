@@ -13,11 +13,12 @@ As part of the [Support Design library introduced in 22.2.0](https://developer.a
 - Character counter
 - Error indicator
 
-I want to focus on the last one, displaying an error when an input is invalid, since it requires writing additional business logic to support.
+I want to focus on the last one since it requires additional business logic to support it.
 <!-- excerpt.end -->
 
-<div style="text-align: center;"><img src="../assets/validator.png"></div>
-<sup><i>A few of the things TextInputLayout provides</i></sup>
+<div><img src="../assets/validator.png"></div>
+<center><sup><i>A few of the things TextInputLayout provides</i></sup></center>
+<br>
 
 Let's assume we want to show an error indicator if the user's password is less than six characters. First, we wrap our existing EditText in a TextInputLayout:
 
@@ -41,10 +42,10 @@ From our view, we'll validate if the password input meets our requirement:
 
 {% highlight java %}
 submit.setOnClickListener(v -> {
-    if (password.getText().length() >= 6) {
-        login();
+    if (password.getText().length() < 6) {
+    	passwordLayout.setError(getString(R.string.password_error));
     } else {
-        passwordLayout.setError(getString(R.string.password_error));
+        login();
     }
 });
 {% endhighlight %}
@@ -81,7 +82,7 @@ There's a pattern here that can be applied for each input:
 2. Validate string against some some arbitrary rule (or ruleset)
 3. Depending on validity:
     - Hide error indicator
-    - Show error indicator and invalidate entire form
+    - Show error indicator
 
 If all form inputs are valid, we can move forward with the desired operation (e.g. logging in). If one or more inputs are invalid, the user is blocked from proceeding.
 
