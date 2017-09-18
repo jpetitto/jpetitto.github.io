@@ -19,8 +19,6 @@ code {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-left: 0;
-  margin-rigt: 0;
 }
 
 pre code {
@@ -33,6 +31,7 @@ pre code {
 // Pygments via Jekyll
 .highlight {
   padding: 1rem;
+  margin: auto
   margin-bottom: 1rem;
   font-size: .8rem;
   line-height: 1.4;
