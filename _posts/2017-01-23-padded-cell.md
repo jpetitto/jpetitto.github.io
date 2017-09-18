@@ -24,7 +24,13 @@ By setting clipToPadding to false on the RecyclerView, we can get this desired b
 
 Here's a simple RecyclerView that supports each of these features:
 
-<script src="https://gist.github.com/jpetitto/a638f6f5914b952855b26fa2743e347c.js"></script>
+{% highlight xml %}
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:clipToPadding="false" />
+{% endhighlight %}
 
 _Initial Position_
 <div>
@@ -38,11 +44,30 @@ _After Scrolling_
 
 To deal with the spacing between items, we can use an ItemDecoration. For example, here is a simple reusable ItemDecoration that lets you specify the amount of space between each item:
 
-<script src="https://gist.github.com/jpetitto/573bba1025c50ce6cb0f096ead625e44.js"></script>
+{% highlight java %}
+public class SpacingItemDecoration extends RecyclerView.ItemDecoration {
+  private int spacing;
+
+  public SpacingItemDecoration(Context context, int padding) {
+    DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+    spacing = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, padding, metrics);
+  }
+
+  @Override
+  public final void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+    int position = parent.getChildAdapterPosition(view);
+    if (position != state.getItemCount() - 1) {
+      outRect.bottom = spacing;
+    }
+  }
+}
+{% endhighlight %}
 
 It applies an offset to the bottom of each item except for the last one (our RecyclerView should already specify the padding at the bottom for us). We can then  simply add this ItemDecoration to our RecyclerView with the desired padding:
 
-<script src="https://gist.github.com/jpetitto/066aed2b61c428a34ae3b3a11cce527e.js"></script>
+{% highlight java %}
+recyclerView.addItemDecoration(new SpacingItemDecoration(context, 16));
+{% endhighlight %}
 
 Perhaps the only time you want to forego this and specify a margin directly on a child view is if you have variable spacing for different views in your adapter. For instance, we may have a header view that needs a different amount of padding than the other views in the adapter.
 
