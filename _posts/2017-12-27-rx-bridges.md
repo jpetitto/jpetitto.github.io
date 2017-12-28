@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't build bridges where there's no water to cross
+title: Don't Build Bridges Where There's No Water to Cross
 comments: true
 permalink: rx-bridges
 ---
