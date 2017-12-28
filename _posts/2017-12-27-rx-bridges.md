@@ -15,8 +15,9 @@ If you're familiar with RxJava, this code should look straightforward:
 
 {% highlight java %}
 public Completable deleteCustomerCard(CustomerCard card) {
-    return cardService.deleteCard(card)
-            .andThen(Completable.fromAction(() -> database.deleteCard(card)));
+  return cardService.deleteCard(card).andThen(
+          Completable.fromAction(() -> database.deleteCard(card))
+  );
 }
 {% endhighlight %}
 
