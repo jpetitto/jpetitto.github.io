@@ -29,4 +29,4 @@ The fact is, `Completable.fromAction(...)` simply executes its Action when it's 
 
 This mistake seems obvious when pointed out, but at the time it was an honest and easy mistake to make. This is especially true when you have developers who are new to the Rx paradigm. Ideally this would be caught in a code review but sometimes things like this slip through the cracks.
 
-If your code is largely designed in a reactive manner, you usually won't need to use static factory methods. This is often left as an implementation detail inside the lower level methods that need to bridge the gap between the Rx and non-Rx worlds.
+If your code is largely designed in a reactive manner, you usually won't need to use many of RxJava's static factory methods. This is often left to the lower level methods that need to bridge the gap between the Rx and non-Rx worlds.
