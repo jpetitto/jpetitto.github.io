@@ -1,46 +1,24 @@
----
-layout: default
-title: Home
----
+<!-- wherever you go, there you are -->
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {% if post.content contains '<!-- excerpt.start -->' and post.content contains '<!-- excerpt.end -->' %}
-
-      {{ ((post.content | split:'<!-- excerpt.start -->' | last) | split: '<!-- excerpt.end -->' | first) | strip.html }}
-
-    {% else %}
-
-      {{ post.content }}
-
-    {% endif %}
-
-    <div class="read-more">
-      <a class="read-more" href="{{ post.url }}">Read More</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="June came and went but the gloom never left..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GLOOM, LOS ANGELES</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="title">
+      Gloom <span class="title-bold">Los Angeles</span>
     </div>
+    <ul>
+      <li><a href="https://gloomla.bigcartel.com/">Store</a></li>
+      <li><a href="https://www.instagram.com/gloom.la/">Instagram</a></li>
+      <li><a href="mailto:&#110;&#111;&#098;&#111;&#100;&#121;&#064;&#103;&#108;&#111;&#111;&#109;&#046;&#108;&#097;">Contact Us</a></li>
+    </ul>
+  </body>
+</html>
 
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-</div>
+<!-- wherever you go, there you are -->
